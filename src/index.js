@@ -2,6 +2,8 @@ import express from "express";
 import rutas from './routes'
 
 const app = express();
+// aceptar peticiones en formato json (req.body)
+app.use(express.json());
 
 // RUTAS
 app.use("/api/v1", rutas);
