@@ -1,26 +1,23 @@
 POST http://127.0.0.1:3000/api/v1/auth/login
 Content-Type: application/json
 
-{
-    "email": "admin2@mail.com",
-    "password": "admin254321"
-}
+    {
+        "email": "niels@mail.com",
+        "password": "niels54321"
+    }
 
-
-#### registro
+### REGISTRO
 POST http://127.0.0.1:3000/api/v1/auth/register
 Content-Type: application/json
 
-{
-    "name": "admin2",
-    "email": "admin2@mail.com",
-    "password": "admin254321"
-}
+    {
+    "name": "admin",
+    "email": "admin@mail.com",
+    "password": "admin54321"
+    }
 
-
-### perfil 
+###PERFIL
 GET http://127.0.0.1:3000/api/v1/auth/profile
 
-### salir
-
-POST  http://127.0.0.1:3000/api/v1/auth/logout
+### SALIR
+POST http://127.0.0.1:3000/api/v1/auth/logout
