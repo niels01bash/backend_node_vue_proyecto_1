@@ -1,2 +1,13 @@
 GET http://127.0.0.1:3000/api/v1/usuario
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZW1haWwiOiJuaWVsc0BtYWlsLmNvbSIsInRpbWUiOiIyMDI2LTA0LTIyVDE5OjMyOjUyLjQ2MloiLCJpYXQiOjE3NzY4ODYzNzIsImV4cCI6MTc3Njg4OTk3Mn0.nxJPDTTfnYfmwnQcUW9AgZ-u3T08tgIeGqHd51trHmI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJ0aW1lIjoiMjAyNi0wNC0yOFQyMTo0NjozMC43NjdaIiwiaWF0IjoxNzc3NDEyNzkwLCJleHAiOjE3Nzc0MTYzOTB9.vRIbp3uCPecCPsuZuAivsCoUqh9Tzgm6_OKqiXBDiGU
+
+### nuevo usuario 
+POST http://127.0.0.1:3000/api/v1/usuario
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJ0aW1lIjoiMjAyNi0wNC0yOFQyMTo0NjozMC43NjdaIiwiaWF0IjoxNzc3NDEyNzkwLCJleHAiOjE3Nzc0MTYzOTB9.vRIbp3uCPecCPsuZuAivsCoUqh9Tzgm6_OKqiXBDiGU
+Content-Type: application/json
+
+{
+    "name": "simon",
+    "email": "simon@mail.com",
+    "password": "simon54321"
+}
