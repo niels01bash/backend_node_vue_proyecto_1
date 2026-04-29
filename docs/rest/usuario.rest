@@ -1,13 +1,27 @@
 GET http://127.0.0.1:3000/api/v1/usuario
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJ0aW1lIjoiMjAyNi0wNC0yOFQyMTo0NjozMC43NjdaIiwiaWF0IjoxNzc3NDEyNzkwLCJleHAiOjE3Nzc0MTYzOTB9.vRIbp3uCPecCPsuZuAivsCoUqh9Tzgm6_OKqiXBDiGU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJ0aW1lIjoiMjAyNi0wNC0yOVQwMzo1NjoyMi44MzBaIiwiaWF0IjoxNzc3NDM0OTgyLCJleHAiOjE3Nzc0Mzg1ODJ9.XEAAuh_lDmbuRzkFlZiJMfzthbzpRouMmfU5l6t84Cs
 
 ### nuevo usuario 
 POST http://127.0.0.1:3000/api/v1/usuario
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJ0aW1lIjoiMjAyNi0wNC0yOFQyMTo0NjozMC43NjdaIiwiaWF0IjoxNzc3NDEyNzkwLCJleHAiOjE3Nzc0MTYzOTB9.vRIbp3uCPecCPsuZuAivsCoUqh9Tzgm6_OKqiXBDiGU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJ0aW1lIjoiMjAyNi0wNC0yOVQwMzo1NjoyMi44MzBaIiwiaWF0IjoxNzc3NDM0OTgyLCJleHAiOjE3Nzc0Mzg1ODJ9.XEAAuh_lDmbuRzkFlZiJMfzthbzpRouMmfU5l6t84Cs
 Content-Type: application/json
 
 {
-    "name": "simon",
-    "email": "simon@mail.com",
-    "password": "simon54321"
+    "name": "Marco",
+    "email": "marco@mail.com",
+    "password": "marco54321"
+}
+
+### mostrar
+GET http://127.0.0.1:3000/api/v1/usuario/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJ0aW1lIjoiMjAyNi0wNC0yOVQwMzo1NjoyMi44MzBaIiwiaWF0IjoxNzc3NDM0OTgyLCJleHAiOjE3Nzc0Mzg1ODJ9.XEAAuh_lDmbuRzkFlZiJMfzthbzpRouMmfU5l6t84Cs
+
+### modificar
+PUT http://127.0.0.1:3000/api/v1/usuario/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJ0aW1lIjoiMjAyNi0wNC0yOVQwNDozNjowNi42MjVaIiwiaWF0IjoxNzc3NDM3MzY2LCJleHAiOjE3Nzc0NDA5NjZ9.2rAfHXQWOLcSd0lvblQEYLkh8-ESHDpEAxKaU1Lq2dY
+
+{
+    "name": "admin1",
+    "email": "admin1@mail.com",
+    "password": "admin154321"
 }
