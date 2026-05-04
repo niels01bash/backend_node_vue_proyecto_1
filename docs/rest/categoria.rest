@@ -1,0 +1,16 @@
+GET http://127.0.0.1:3000/api/v1/categoria
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJ0aW1lIjoiMjAyNi0wNS0wNFQwODo0Njo0Ny43MThaIiwiaWF0IjoxNzc3ODg0NDA3LCJleHAiOjE3Nzc4ODgwMDd9.5dF6LVhj7fH-jXZ4gidLwzGIHB7uvHtmjmzMGzGCU8A
+
+### guardar categoria
+POST http://127.0.0.1:3000/api/v1/categoria
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJ0aW1lIjoiMjAyNi0wNS0wNFQwODo0Njo0Ny43MThaIiwiaWF0IjoxNzc3ODg0NDA3LCJleHAiOjE3Nzc4ODgwMDd9.5dF6LVhj7fH-jXZ4gidLwzGIHB7uvHtmjmzMGzGCU8A
+Content-Type: application/json
+
+{
+    "nombre": "JUGUETES",
+    "detalle": "Juguetes para niños"
+}
+
+### mostrar categoria
+GET http://127.0.0.1:3000/api/v1/categoria/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MTAsImVtYWlsIjoiYWRtaW5AbWFpbC5jb20iLCJ0aW1lIjoiMjAyNi0wNS0wNFQwODo0Njo0Ny43MThaIiwiaWF0IjoxNzc3ODg0NDA3LCJleHAiOjE3Nzc4ODgwMDd9.5dF6LVhj7fH-jXZ4gidLwzGIHB7uvHtmjmzMGzGCU8A

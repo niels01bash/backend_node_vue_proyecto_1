@@ -6,7 +6,7 @@ export default {
         const usuarios =await models.User.findAll({
             attributes:['id','name', 'email']
         });
-        return res.status(200).json(usuarios)
+        return res.status(200).json(usuarios);
     },
     async funGuardarUsuario(req, res){
         const { name, email, password } = req.body;

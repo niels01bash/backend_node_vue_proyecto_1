@@ -4,7 +4,7 @@ const {
   ForeignKeyConstraintError
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class User extends Model {
+  class Pedido extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -12,18 +12,23 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      models.User.hasOne(models.Persona, {
-        ForeignKey: "userId"
+        models.Pedido.belongsToMany(models.Producto, {
+          through: 'PedidoProducto'
       });
+        models.Producto.belongsTo(models.Cliente, {
+          foreign: 'ClienteId'
+      })
     }
   }
-  User.init({
-    name: DataTypes.STRING,
-    email: DataTypes.STRING,
-    password: DataTypes.STRING
+  Pedido.init({
+    fecha: DataTypes.STRING,
+    observacion: DataTypes.TEXT,
+    detalle: DataTypes.TEXT,
+    estado: DataTypes.INTEGER,
+    clienteId: DataTypes.INTEGER
   }, {
     sequelize,
-    modelName: 'User',
+    modelName: 'Pedido',
   });
-  return User;
+  return Pedido;
 };
